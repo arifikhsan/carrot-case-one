@@ -48,7 +48,7 @@ public class User {
     }
 
     public void sendPoint(List<History> histories, User receiver, Integer point) {
-        if (this.getPoint()-point>0) {
+        if (this.getPoint() - point > 0) {
             this.setPoint(this.getPoint() - point);
             histories.add(new History(this, receiver, TransactionType.SEND, point, new Date()));
 
