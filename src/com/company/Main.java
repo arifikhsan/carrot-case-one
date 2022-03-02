@@ -1,5 +1,7 @@
-import model.History;
-import model.User;
+package com.company;
+
+import com.company.model.History;
+import com.company.model.User;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -59,3 +61,4 @@ public class Main {
         System.out.println("------------------------------");
     }
 }
+

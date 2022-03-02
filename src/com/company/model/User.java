@@ -1,7 +1,7 @@
-package model;
+package com.company.model;
 
+import java.util.ArrayList;
 import java.util.Date;
-import java.util.List;
 
 public class User {
     private Integer id;
@@ -47,7 +47,7 @@ public class User {
                 '}';
     }
 
-    public void sendPoint(List<History> histories, User receiver, Integer point) {
+    public void sendPoint(ArrayList<History> histories, User receiver, Integer point) {
         if (this.getPoint() - point > 0) {
             this.setPoint(this.getPoint() - point);
             histories.add(new History(this, receiver, TransactionType.SEND, point, new Date()));
@@ -62,7 +62,7 @@ public class User {
         }
     }
 
-    public void askPoint(List<History> histories, User sender, Integer point) {
+    public void askPoint(ArrayList<History> histories, User sender, Integer point) {
         this.setPoint(this.getPoint() + point);
         histories.add(new History(sender, this, TransactionType.SEND, point, new Date()));
 
