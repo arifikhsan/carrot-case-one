@@ -4,51 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="869fea22-09cb-44b7-901b-c1c9001cdb04" name="Changes" comment="build">
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/carrot-case-one.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/dependencies-accessors.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/dependencies-accessors/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/executionHistory/executionHistory.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileChanges/last-build.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/fileHashes.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/fileHashes/resourceHashesCache.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.2/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/outputFiles.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/checksums/checksums.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/vcs-1/gc.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/jarRepositories.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/History.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/TransactionType.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/classes/java/main/model/User.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/tmp/compileJava/previous-compilation-data.bin" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.jar" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradle/wrapper/gradle-wrapper.properties" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/gradlew.bat" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/settings.gradle" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/History.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/History.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/TransactionType.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/TransactionType.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/User.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/com/company/model/User.java" afterDir="false" />
+    <list default="true" id="869fea22-09cb-44b7-901b-c1c9001cdb04" name="Changes" comment="remove gradle">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -94,7 +51,7 @@
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.gradle" />
   </component>
-  <component name="RunManager">
+  <component name="RunManager" selected="Application.Unnamed">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="carrot-case-one" />
@@ -102,19 +59,17 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="JetRunConfigurationType">
+    <configuration name="Unnamed" type="Application" factoryName="Application" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.company.Main" />
       <module name="carrot-case-one" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name="carrot-case-one" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+    <list>
+      <item itemvalue="Application.Unnamed" />
+      <item itemvalue="Application.Main" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="Application.Main" />
@@ -135,7 +90,7 @@
       <workItem from="1646184319159" duration="371000" />
       <workItem from="1646184775370" duration="11000" />
       <workItem from="1646184887518" duration="88000" />
-      <workItem from="1646184988334" duration="484000" />
+      <workItem from="1646184988334" duration="1310000" />
     </task>
     <task id="LOCAL-00001" summary="initial commit">
       <created>1646180270780</created>
@@ -165,7 +120,14 @@
       <option name="project" value="LOCAL" />
       <updated>1646182650237</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="remove gradle">
+      <created>1646185490440</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1646185490440</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -187,7 +149,8 @@
     <MESSAGE value="apply changes from khafido" />
     <MESSAGE value="cleanup" />
     <MESSAGE value="build" />
-    <option name="LAST_COMMIT_MESSAGE" value="build" />
+    <MESSAGE value="remove gradle" />
+    <option name="LAST_COMMIT_MESSAGE" value="remove gradle" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/carrot_case_one$Main.ic" NAME="Main Coverage Results" MODIFIED="1646185445865" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
