@@ -1,6 +1,6 @@
 package model;
 
-import java.time.LocalDateTime;
+import java.util.Date;
 import java.util.List;
 
 public class User {
@@ -48,18 +48,25 @@ public class User {
     }
 
     public void sendPoint(List<History> histories, User receiver, Integer point) {
-        this.setPoint(this.getPoint() - point);
-        histories.add(new History(this, receiver, TransactionType.SEND, point, LocalDateTime.now()));
+        if (this.getPoint()-point>0) {
+            this.setPoint(this.getPoint() - point);
+            histories.add(new History(this, receiver, TransactionType.SEND, point, new Date()));
 
-        receiver.setPoint(receiver.getPoint() + point);
-        histories.add(new History(this, receiver, TransactionType.RECEIVE, point, LocalDateTime.now()));
+            receiver.setPoint(receiver.getPoint() + point);
+            System.out.println(this.getName() + " successfully send " + point + " points to " + receiver.getName() + " (" + new Date() + ")");
+            System.out.println("------------------------------");
+            histories.add(new History(this, receiver, TransactionType.RECEIVE, point, new Date()));
+        } else {
+            System.out.println(this.getName() + " failed send " + point + " points to " + receiver.getName() + " (" + new Date() + ")");
+            System.out.println("------------------------------");
+        }
     }
 
     public void askPoint(List<History> histories, User sender, Integer point) {
         this.setPoint(this.getPoint() + point);
-        histories.add(new History(sender, this, TransactionType.SEND, point, LocalDateTime.now()));
+        histories.add(new History(sender, this, TransactionType.SEND, point, new Date()));
 
         sender.setPoint(sender.getPoint() - point);
-        histories.add(new History(sender, this, TransactionType.RECEIVE, point, LocalDateTime.now()));
+        histories.add(new History(sender, this, TransactionType.RECEIVE, point, new Date()));
     }
 }

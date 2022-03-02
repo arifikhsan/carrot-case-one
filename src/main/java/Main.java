@@ -9,32 +9,41 @@ import java.util.List;
 // 3. Information history send and received point(Date, user sender, point, user receiver)
 // 4. Information about List of Users
 public class Main {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws InterruptedException {
         ArrayList<History> histories = new ArrayList<>();
 
-        // 1 done
         User arif = new User(1, "arif", 100);
         User khafido = new User(2, "khafido", 100);
         ArrayList<User> users = new ArrayList<>(List.of(arif, khafido));
         showUsers(users);
-
-        // 2 done
-        arif.sendPoint(histories, khafido, 10);
-        khafido.sendPoint(histories, arif, 20);
-
-        arif.askPoint(histories, khafido, 10);
-        khafido.askPoint(histories, arif, 20);
-
-        // 3 done
-        showUsers(users);
         showHistories(histories);
 
-        // 4 done
+        arif.sendPoint(histories, khafido, 1200);
+        showHistories(histories);
+        showUsers(users);
+        Thread.sleep(1000);
+
+        khafido.sendPoint(histories, arif, 20);
+        showHistories(histories);
+        Thread.sleep(1000);
+
+//        arif.askPoint(histories, khafido, 10);
+//        showHistories(histories);
+//        showUsers(users);
+//        Thread.sleep(1000);
+//
+//        khafido.askPoint(histories, arif, 20);
+//        showUsers(users);
+
+        System.out.println("------------------------------");
         System.out.println("Users " + "(" + users.size() + "): ");
+        showUsers(users);
     }
 
     private static void showHistories(ArrayList<History> histories) {
+//        System.out.println("------------------------------");
         System.out.println("History size: " + histories.size());
+        System.out.println("------------------------------");
         histories.forEach(history -> System.out.println(history.toString()));
     }
 
